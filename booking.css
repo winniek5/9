@@ -1,0 +1,191 @@
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* GENERAL BODY STYLING */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFFF0;
+    color: #333333;
+}
+
+/* NAVIGATION BAR */
+.navbar {
+    background-color: #800020;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* HOTEL LOGO */
+.navbar img {
+    height: 50px;
+}
+
+/* NAVIGATION LINKS */
+.navbar nav a {
+    color: #FFFFF0;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 25px;
+}
+
+/* NAVIGATION HOVER */
+.navbar nav a:hover {
+    color: #C9A84C;
+}
+
+/* HERO SECTION */
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+    background-image: url("hero-serena.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* HERO OVERLAY */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+/* HERO CONTENT */
+.hero-content {
+    position: relative;
+    color: white;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+/* BOOK NOW BUTTON */
+.book-btn {
+    display: inline-block;
+    background-color: #C9A84C;
+    color: #800020;
+    padding: 14px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* BUTTON HOVER */
+.book-btn:hover {
+    background-color: #800020;
+    color: white;
+}
+
+/* ROOM SHOWCASE */
+#rooms {
+    padding: 50px 30px;
+    text-align: center;
+}
+
+#rooms h2 {
+    color: #800020;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+/* ROOM CARDS CONTAINER */
+.room-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+/* INDIVIDUAL ROOM CARD */
+.room-card {
+    background-color: white;
+    border: 1px solid #C9A84C;
+    border-radius: 8px;
+    padding: 30px;
+    width: 45%;
+    text-align: center;
+}
+
+/* ROOM CARD HEADINGS */
+.room-card h3 {
+    color: #800020;
+    margin-bottom: 15px;
+}
+
+/* ROOM PRICES */
+.room-card h4 {
+    color: #C9A84C;
+    margin: 15px 0;
+    font-size: 22px;
+}
+
+/* ROOM DESCRIPTION */
+.room-card p {
+    line-height: 1.6;
+}
+
+/* COMPARISON SECTION */
+#compare {
+    padding: 50px 30px;
+}
+
+#compare h2 {
+    text-align: center;
+    color: #800020;
+    margin-bottom: 30px;
+}
+
+/* COMPARISON TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th {
+    background-color: #800020;
+    color: white;
+}
+
+th, td {
+    border: 1px solid #C9A84C;
+    padding: 15px;
+    text-align: center;
+}
+
+/* TABLE ROW COLOURS */
+tbody tr:nth-child(even) {
+    background-color: #FFFFF0;
+}
+
+/* GREEN TICK */
+.yes {
+    color: green;
+    font-weight: bold;
+}
+
+/* RED CROSS */
+.no {
+    color: red;
+    font-weight: bold;
+}
